@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <title>Login Form</title>
+  <style>
+    input.left {
+      float: left;
+      border-radius: 12px;
+    }
+
+    input.right {
+      float: right;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="login1.php" , method="POST">
+    <table>
+      <tr>
+        <td>Numero Tessera Sanitaria: </td>
+        <td><input type="text" name="tesseraSanitaria" required></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input class="left" type="submit" value="Invia"><input class="right" type="reset" value="Cancella"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>

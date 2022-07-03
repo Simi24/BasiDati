@@ -1,0 +1,55 @@
+<HTML>
+    <head>
+      <title>Prova form</title>
+      <!--<link rel="stylesheet" type="text/css" href="form.css">-->
+      <style>
+        table, th, td {
+          text-align: left;
+          border: 1px solid white;
+          background: #618685;
+          color: white;
+        }
+        td.center {
+          text-align: center;
+        }	
+      </style>
+    </head>
+    <body>
+      <p class="form" >
+      <form action="registrazionePaziente.php" , method="POST">
+        <table class="insert">
+            <tr>
+                <td>Tessera Sanitaria: </td>
+                <td><input type="text" name="tesseraSanitaria"></input></td>
+              </tr>
+          <tr>
+            <td>Nome: </td>
+            <td><input type="text" name="nome"></input></td>
+          </tr>
+          <tr>
+            <td>Cognome: </td>
+            <td><input type="text" name="cognome"></input></td>
+          </tr>
+          <tr>
+            <td>Codice Fisale: </td>
+            <td><input type="text" name="CF"></input></td>
+          </tr>
+          <tr>
+            <td>Data nascita: </td>
+            <td>
+                <input type="date" id="start" name="nascita"
+                min="1902-01-01" max="2022-12-31">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="center">
+              <input type="submit" value="OK" />
+              <input type="reset" value="Cancella" />
+            </td>
+          </tr>
+        </table>
+      </form>
+      </p>
+    </body>
+    </HTML>
+    
